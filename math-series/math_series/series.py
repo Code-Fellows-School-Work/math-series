@@ -19,3 +19,6 @@ def lucas(n):
         return 1
     
     return lucas(n-2) + lucas(n-1)
+
+# optional params 0 and 1 align with the first two values of the fib sequence
+def sum_series(req_param, optional_param1=0, optional_param2=1):
