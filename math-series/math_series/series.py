@@ -8,7 +8,7 @@ def fibonacci(n):
     
     # recursive case
     # used ChatGPT to mathematically express fibonacci sequence
-    return fibonacci(n-1) + fibonacci(n-2)
+    return fibonacci(n-2) + fibonacci(n-1)
 
 def lucas(n):
     # base case
@@ -21,4 +21,15 @@ def lucas(n):
     return lucas(n-2) + lucas(n-1)
 
 # optional params 0 and 1 align with the first two values of the fib sequence
-def sum_series(req_param, optional_param1=0, optional_param2=1):
+def sum_series(n, optional_param1=0, optional_param2=1):
+
+    if n == 0:
+        return None
+    
+    if n == 1:
+        return None
+    
+    if optional_param1 == 0 and optional_param2 == 1:
+        return fibonacci(n-3) + fibonacci(n-2)
+    
+    
