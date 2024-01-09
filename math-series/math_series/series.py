@@ -7,5 +7,5 @@ def fibonacci(n):
         return 1
     
     # recursive case
-
+    # used ChatGPT to mathematically express fibonacci sequence
     return fibonacci(n-1) + fibonacci(n-2)
