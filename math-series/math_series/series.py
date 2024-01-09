@@ -1,16 +1,11 @@
 def fibonacci(n):
-
-    if n == 1:
+    # base case
+    if n == 0:
         return 0
     
-    if n == 2:
+    if n == 1:
         return 1
     
-    if n == 3:
-        return 1
-    
-    if n == 4:
-        return 2
-    
-    if n == 5:
-        return 3
+    # recursive case
+
+    return fibonacci(n-1) + fibonacci(n-2)
