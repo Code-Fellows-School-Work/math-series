@@ -32,4 +32,6 @@ def sum_series(n, optional_param1=0, optional_param2=1):
     if optional_param1 == 0 and optional_param2 == 1:
         return fibonacci(n-3) + fibonacci(n-2)
     
+    if optional_param1 == 2 and optional_param2 == 1:
+        return lucas(n-3) + lucas(n-2)
     

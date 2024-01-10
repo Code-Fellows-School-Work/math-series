@@ -62,6 +62,11 @@ def test_one_series():
     expected = 3
     assert actual == expected
 
+def test_two_series():
+    actual = sum_series(5, 2, 1)
+    expected = 7
+    assert actual == expected
+
 # def test_two_series():
 #     # optional values of 2, 1 align with the first two values of lucas numbers
 #     actual = sum_series(req_param, 2, 1)
