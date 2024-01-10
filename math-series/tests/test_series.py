@@ -58,16 +58,16 @@ def test_five_luc():
     assert actual == expected
 
 def test_one_series():
-    actual = sum_series(5)
-    expected = 3
+    actual = sum_series(1, 0, 2)
+    expected = 1
     assert actual == expected
 
 def test_two_series():
-    actual = sum_series(5, 2, 1)
-    expected = 7
+    actual = sum_series(2, 0, 2)
+    expected = 4
     assert actual == expected
 
 def test_three_series():
-    actual = sum_series(5, 2, 2)
-    expected = 30, -20
+    actual = sum_series(3, 0, 2)
+    expected = 9
     assert actual == expected
